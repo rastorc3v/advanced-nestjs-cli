@@ -1,0 +1,38 @@
+{
+  "name": "advanced-nestjs-cli",
+  "version": "0.0.2",
+  "description": "CLI tool simplifies work with Nest.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "anc": "app/cli.js"
+  },
+  "files": ["app", "LICENSE", "package.json", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rastorc3v/advanced-nestjs-cli.git"
+  },
+  "keywords": [
+    "nestjs",
+    "nest",
+    "cli",
+    "nest-cli"
+  ],
+  "author": "Uladzislau Rastarhuyeu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rastorc3v/advanced-nestjs-cli/issues"
+  },
+  "homepage": "https://github.com/rastorc3v/advanced-nestjs-cli#readme",
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.0.3",
+    "jest": "^30.0.3",
+    "jest-environment-node": "^30.0.2"
+  }
+}
