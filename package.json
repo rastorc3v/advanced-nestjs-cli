@@ -1,6 +1,6 @@
 {
   "name": "advanced-nestjs-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI tool simplifies work with Nest.js",
   "main": "index.js",
   "type": "module",
