@@ -10,7 +10,12 @@
   "bin": {
     "anc": "app/cli.js"
   },
-  "files": ["app", "LICENSE", "package.json", "README.md"],
+  "files": [
+    "app",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rastorc3v/advanced-nestjs-cli.git"
@@ -28,7 +33,8 @@
   },
   "homepage": "https://github.com/rastorc3v/advanced-nestjs-cli#readme",
   "dependencies": {
-    "commander": "^14.0.0"
+    "commander": "^14.0.0",
+    "handlebars": "^4.7.8"
   },
   "devDependencies": {
     "@jest/globals": "^30.0.3",

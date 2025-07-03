@@ -1,0 +1,68 @@
+import { Body, Controller, Delete, Get, HttpCode, HttpStatus, NotFoundException, Param, Post, Put, Req, Res } from '@nestjs/common';
+import { Response } from 'express';
+
+
+@Controller('/{{name}}s')
+export class {{capitalizedName}}sController {
+  constructor() {}
+
+  @Post('/')
+  @HttpCode(HttpStatus.CREATED)
+  async create(@Req() request: Request, @Body() body: object, @Res() res: Response): Promise<any> {
+    const scope = `[{{capitalizedName}}sController][create]`;
+
+    // TODO: Create logic
+    const {{name}} = {};
+
+    res.status(HttpStatus.CREATED).send({{name}});
+    return {{name}};
+  }
+
+  @Delete(':{{name}}Id')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async delete(@Req() req, @Param() params: { {{name}}Id: any }, @Res() res: Response) {
+    const scope = `[{{capitalizedName}}sController][delete]`;
+
+    // TODO: delete logic
+    const isDeleted = true;
+
+    res.status(HttpStatus.NO_CONTENT).json();
+    return;
+  }
+
+  @Get(':{{name}}Id')
+  @HttpCode(HttpStatus.OK)
+  async get(@Req() req, @Param() params: { {{name}}Id: any }): Promise<any> {
+    const scope = `[{{capitalizedName}}sController][get]`;
+
+    // TODO: Get logic
+    const {{name}} = {}
+
+    if (!{{name}}) {
+      throw new NotFoundException();
+    }
+
+    return {{name}};
+  }
+
+  @Put(':{{name}}Id')
+  async update(@Req() req, @Body() body: any, @Param() params: { {{name}}Id: any }, @Res() res: Response) {
+    const scope = `[{{capitalizedName}}sController][update]`;
+
+    // TODO: Get logic
+    const {{name}} = {};
+
+    if (!{{name}}) {
+      throw new NotFoundException();
+    }
+    if (!Object.keys(body).some((changedProp) => body[changedProp] !== {{name}}[changedProp])) {
+      res.status(HttpStatus.NO_CONTENT).json();
+      return;
+    }
+
+    // TODO: Update logic
+    const updated{{capitalizedName}} = {};
+
+    res.status(HttpStatus.OK).send(updated{{capitalizedName}});
+  }
+}

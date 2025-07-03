@@ -9,7 +9,7 @@ This tool should help speed up the creation of the new CRUD controller in existi
 ## 📦 Installation
 
 ```bash
-npm install -g anc
+npm install -g advanced-nestjs-cli
 ```
 
 ## 🚀 Usage
@@ -20,9 +20,10 @@ anc [command] [...args]
 
 ## 📚 Available Commands
 
-| Command                             | Description                                  |
-|-------------------------------------|----------------------------------------------|
-| `anc generate dto <name> [path]`    | Generates DTO files for all CRUD operations  |
+| Command                                 | Description                                                    |
+|-----------------------------------------|----------------------------------------------------------------|
+| `anc generate dto <name> [path]`        | Generates DTO files for all CRUD operations                    |
+| `anc generate controller <name> [path]` | Generated Controller file with methods for all CRUD operations |
 
 ## 📦 Example
 

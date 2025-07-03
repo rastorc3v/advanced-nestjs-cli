@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import {capitalize} from './utils.js';
+import {capitalize} from '../utils.js';
 
 const dtoFilesExtension = '.ts';
 const dtoExtension = '.dto';
